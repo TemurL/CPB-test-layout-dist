@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="./css/style.min.css?_v=20240429232050">
+    <link rel="stylesheet" href="./css/style.min.css?_v=20240501194221">
     <title>Home</title>
 </head>
     <body>
@@ -107,8 +107,40 @@
                 <div class="link-layers-wrapper layer-manager__link-layers-wrapper">
                     <div class="link-layers__header">
                         <p>ALL LAYERS</p>
+                        <p class="link-layers__header_hint hint">Drag items from this list to option/layer it needs to be connected with</p>
                     </div>
                     <ul class="link-layers__layers-list layers-list" id="link-layers__layers-list"></ul>
+                    <ul class="link-layers__options-list options-list" id="link-layers__options-list">
+                        <li class="custom-option options-list__custom-option collapsed" id="color-custom-option">
+                            <div class="custom-option__row custom-option__row_title">
+                                <img src="img/custom-options/visibility.svg" class="custom-option__visibility" alt="">
+                                <span class="custom-option__title">Title</span>
+                                <img src="img/custom-options/collapse.svg" alt="" class="custom-option__collapse-button">
+                            </div>
+                            <div class="custom-option__row custom-option__row_color-choices">
+                                <div class="choices-container">
+                                    <div class="custom-option__color-choice" id="color-choice_1"></div>
+                                    <div class="custom-option__color-choice" id="color-choice_2"></div>
+                                    <div class="custom-option__color-choice" id="color-choice_3"></div>
+                                    <div class="custom-option__color-choice" id="color-choice_4"></div>
+                                    <div class="custom-option__color-choice" id="color-choice_5"></div>
+                                </div>
+                                <div class="custom-option__layer-controls">
+                                    <picture><source srcset="img/custom-options/Link.webp" type="image/webp"><img src="img/custom-options/Link.png" alt=""></picture>
+                                    <img class="custom-option__add-layer-button" src="img/icons/free-icon-font-layer-plus- 7931073.svg" alt="">
+                                    <ul class="custom-option__add-layer-dropdown">
+                                        <li class="dropdown_create">Create new Layer</li>
+                                        <li class="dropdown_select-from">Select from created layers</li>
+                                    </ul>
+                                </div>
+                            </div>
+                            <div class="custom-option__row custom-option__row_actions">
+                                <img src="img/custom-options/move-to-another-step.svg" alt="">
+                                <img src="img/custom-options/Copy.svg" alt="">
+                                <img src="img/custom-options/delete.svg" alt="">
+                            </div>
+                        </li>
+                    </ul>
                 </div>
             </div>
         </div>
@@ -293,6 +325,6 @@
 </div>
             </div> 
         </main>
-        <script src="js/app.min.js?_v=20240429232050"></script>
+        <script src="js/app.min.js?_v=20240501194221"></script>
     </body>
 </html>
